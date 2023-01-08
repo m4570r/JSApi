@@ -6,6 +6,8 @@ Este script es un servidor HTTP escrito en JavaScript que utiliza la librería '
 2. ejecuta los siguientes comandos en la terminal:
 ```
 npm install mysql
+```
+```
 npm install querystring
 ```
 ## Configuracion
@@ -119,9 +121,9 @@ DELETE /?id=3 HTTP/1.1
 
 ### Los parámetros que puedes enviar en una solicitud GET son los siguientes:
 
->'nombre': filtra los resultados por el nombre del usuario.
->'id': filtra los resultados por el ID del usuario.
->'edad': filtra los resultados por la edad del usuario.
+> * 'nombre': filtra los resultados por el nombre del usuario.
+> * 'id': filtra los resultados por el ID del usuario.
+> * 'edad': filtra los resultados por la edad del usuario.
 
 Por ejemplo, si quieres obtener todos los usuarios con el nombre "Juan", debes enviar una solicitud GET con el parámetro 'nombre':
 ```
@@ -137,7 +139,7 @@ Si se envía una solicitud GET y se encuentran resultados, se recibirá una resp
 Si se envía una solicitud GET y no se encuentran resultados, se recibirá una respuesta con un código de estado 200 y un arreglo vacío.
 Si se envía una solicitud GET con un parámetro no válido, se recibirá una respuesta con un código de estado 400 y un objeto JSON con un mensaje de error.
 
-##Solicitud POST
+## Solicitud POST
 
 Si se envía una solicitud POST y se inserta correctamente un nuevo registro en la base de datos, se recibirá una respuesta con un código de estado 200 y un objeto JSON con información sobre la operación de inserción.
 Si se envía una solicitud POST con datos inválidos, se recibirá una respuesta con un código de estado 500 y un objeto JSON con un mensaje de error.
@@ -151,3 +153,6 @@ Si se envía una solicitud PUT con datos inválidos o un ID no válido, se recib
 
 Si se envía una solicitud DELETE y se elimina correctamente un registro de la base de datos, se recibirá una respuesta con un código de estado 200 y un objeto JSON con información sobre la operación de eliminación.
 Si se envía una solicitud DELETE con un ID no válido, se recibirá una respuesta con un código de estado 500 y un objeto JSON con un mensaje de error.
+
+
+Eso por el momento, estare actualizando el codigo saludos ante cualquier duda o consulta miguel.php@gmail.com
